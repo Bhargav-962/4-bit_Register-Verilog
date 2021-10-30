@@ -12,9 +12,17 @@ The register operates according to the value of the select lines as shown below:
   
 The lib.v file contains the code for the basic gates, D-flip flop and a 2x1 multiplexer. The source.v contains code for the 4-bit register and four 4x1 multiplexers. The reg_tb files contains the input test bench values used by the program as input.  
   
-Link to their website [Icarus-Verilog](http://iverilog.icarus.com/)  
- Steps to run this code:-      
- Open command prompt in the location where the files are stored and type the following commands to run the code:-  
- `iverilog -o reg_v lib.v source.v reg_tb.v`   
- `vvp reg_v`  
- `gtkwave tb_file.vcd` (enter dump file specified in the reg_tb file)  
+Link to their website: [Icarus-Verilog](http://iverilog.icarus.com/)  
+### Steps to run this code:-      
+ _Open command prompt in the location where the files are stored and type the following commands to run the code_
+ 
+ ``` 
+ iverilog -o reg_v lib.v source.v reg_tb.v  
+ ``` 
+ ``` 
+ vvp reg_v  
+ ```
+``` 
+gtkwave tb_file.vcd 
+``` 
+(enter the dump file name specified in the reg_tb file for `tb_file.vcd`)  
